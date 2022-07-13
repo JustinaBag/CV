@@ -1,0 +1,82 @@
+.home {
+    height: 100%;
+    width: 100%;
+    padding-top: 65vh;
+    overflow: hidden;
+    align-items: center;
+    text-align: center;
+    background: 
+      linear-gradient(
+        to right,
+        rgba($primary-color, 0.4),
+        rgba($primary-color, 0.3)
+      ),
+      url('../img/JustinaBagPhoto.PNG') center top;
+    object-fit: cover;
+    background-repeat: no-repeat;
+  
+    &__name {
+      // font-size: 5rem;
+      // padding-bottom: 1rem;
+      // margin-bottom: 1rem;
+      border-bottom: 2px solid set-text-color($primary-color);
+    }
+
+    .wrapper-big {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: flex-end;
+      padding: 0.5em 1em 0.5em 1em;
+  }
+  
+  .text-big {
+      margin: 0;
+      line-height: 0.55;
+      font-size: 1.5rem;
+      letter-spacing: 0.1rem;
+      float: left;
+      padding: 1.5rem;
+  }
+  
+  span {
+      display: inline-block;
+  }
+  
+  .stack {
+      display: block;
+      color: $secondary-color;
+      font-weight: 800;
+  }
+  
+  .surname {
+      color: $secondary-color;
+      font-weight: 600;
+      // letter-spacing: 0.1rem;
+  }
+  
+  /*  Bouncing Animation */
+  
+  @keyframes bounce {
+      from {
+          transform: translate3d(0, 0, 0);
+      }
+  
+      to {
+          transform: translate3d(0, -10px, 0);
+      }
+  }
+  
+  .bouncing {
+      animation: bounce 0.4s;
+      animation-iteration-count: infinite;
+      animation-direction : alternate;
+  }
+    
+  }
+
+  
+
+
+
+    
+  
